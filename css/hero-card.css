@@ -1,0 +1,121 @@
+/* ================= OVERLAP SECTION ================= */
+
+.hero-cards {
+  position: relative;
+  margin-top: -80px;
+  z-index: 10;
+  padding: 0 20px;
+}
+
+/* ================= WRAPPER ================= */
+
+.cards-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+}
+
+/* ================= CARD ================= */
+
+.card {
+  position: relative;
+  flex: 1;
+  max-width: 600px;
+  min-width: 280px;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ================= TEXT ================= */
+
+.card-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  text-align: center;
+  color: #fff;
+}
+
+.card-text h4 {
+  font-size: clamp(14px, 1.2vw, 18px);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  font-size: clamp(13px, 1.3vw, 22px);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* ================= 1200px ================= */
+
+@media (max-width: 1200px) {
+  .hero-cards {
+    margin-top: -50px;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+}
+
+/* ================= 992px ================= */
+
+@media (max-width: 992px) {
+  .cards-wrapper {
+    gap: 20px;
+  }
+}
+
+/* ================= 768px ================= */
+
+@media (max-width: 768px) {
+  .hero-cards {
+    margin-top: 0;
+  }
+
+  .cards-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+/* ================= 575px ================= */
+
+@media (max-width: 575px) {
+  .hero-cards {
+    margin-top: 0;
+  }
+
+  .cards-wrapper {
+    gap: 5px;
+  }
+
+  .card-text {
+    width: 90%;
+  }
+
+  .card-text h4 {
+    margin-bottom: 5px;
+  }
+
+  .card-text p {
+    letter-spacing: 0.5px;
+  }
+}

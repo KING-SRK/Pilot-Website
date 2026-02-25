@@ -1,0 +1,116 @@
+.gt-testimonial-section {
+  background-color: #2c3e6b;
+  padding: 80px 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: #fff;
+  overflow: hidden;
+}
+
+.gt-testimonial-title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  letter-spacing: 1px;
+}
+
+.gt-testimonial-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.gt-testimonial-box {
+  border: 2px solid #fff;
+  border-radius: 30px;
+  padding: 40px;
+  min-height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px; /* স্লাইডগুলোর মধ্যে গ্যাপের জন্য */
+}
+
+.gt-testimonial-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.gt-footer-line {
+  height: 2px;
+  background-color: #fff;
+  flex-grow: 1;
+}
+
+.gt-testimonial-author {
+  font-size: 14px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Swiper Dots Customization */
+.gt-testimonial-dots {
+  position: relative !important;
+  margin-top: 40px !important;
+}
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.5) !important;
+  opacity: 1 !important;
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #fff !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+@media (max-width: 1440px) {
+  .gt-testimonial-container {
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .gt-testimonial-container {
+    max-width: 1000px;
+  }
+  .gt-testimonial-title {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .gt-testimonial-box {
+    padding: 30px;
+    min-height: 200px;
+  }
+  .gt-testimonial-author {
+    font-size: 12px;
+  }
+  .gt-footer-line {
+    height: 1px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gt-testimonial-title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  .gt-testimonial-box {
+    padding: 20px;
+    margin: 5px;
+  }
+  .gt-testimonial-author {
+    font-size: 11px;
+  }
+  .gt-testimonial-footer {
+    gap: 10px;
+  }
+}

@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .intro-section {
+      background-color: #f7a01b;
+      padding: 40px;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .floating-image {
+      /* এটাই আসল কাজটা করবে */
+      float: left;
+
+      width: 45%; /* ছবিটা স্ক্রিনের ৪৫% জায়গা নেবে */
+      margin-right: 30px; /* ছবি আর লেখার মাঝে গ্যাপ */
+      margin-bottom: 20px; /* ছবির নিচে যদি লেখা থাকে তার গ্যাপ */
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-top: 0;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 15px;
+      text-align: justify; /* পুরো ছবির মতো লুক পাওয়ার জন্য */
+    }
+
+    /* ফ্লোট ক্লিন করার জন্য (যাতে নিচের সেকশন ভেঙে না যায়) */
+    article::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* মোবাইল রেসপন্সিভ */
+    @media (max-width: 768px) {
+      .floating-image {
+        float: none; /* মোবাইলে ফ্লোট বন্ধ করে দেব */
+        width: 100%;
+        margin-right: 0;
+      }
+    }
+  </style>
+  <body>
+    <section class="intro-section">
+      <div class="container">
+        <article class="content-wrapper">
+          <aside class="image-box">
+            <img
+              src="images/pilot.png"
+              alt="A smiling Indian Pilot in cockpit"
+            />
+          </aside>
+
+          <section class="intro-section">
+            <div class="container">
+              <article>
+                <img
+                  src="images/pilot.png"
+                  alt="Pilot"
+                  class="floating-image"
+                />
+
+                <div class="content">
+                  <h2>INTRODUCTION TO FIP</h2>
+                  <p>
+                    <strong>The Federation of Indian Pilots (FIP)</strong> is
+                    India's largest and most representative professional welfare
+                    body for pilots...
+                  </p>
+                  <p>
+                    From its inception, FIP has stood firmly for one
+                    non-negotiable principle SAFETY...
+                  </p>
+                  <p>
+                    Recognising that safety begins with knowledge, competence,
+                    and disciplined training...
+                  </p>
+                  <p>
+                    Since 2018, FIP has led sustained legal and regulatory
+                    interventions...
+                  </p>
+                  <p>
+                    Recognising that safety begins with knowledge, competence,
+                    and disciplined training...
+                  </p>
+                  <p>
+                    Since 2018, FIP has led sustained legal and regulatory
+                    interventions...
+                  </p>
+                  <p>
+                    Recognising that safety begins with knowledge, competence,
+                    and disciplined training...
+                  </p>
+                  <p>
+                    Since 2018, FIP has led sustained legal and regulatory
+                    interventions...
+                  </p>
+                  <p>
+                    Recognising that safety begins with knowledge, competence,
+                    and disciplined training...
+                  </p>
+                  <p>
+                    Since 2018, FIP has led sustained legal and regulatory
+                    interventions...
+                  </p>
+                </div>
+              </article>
+            </div>
+          </section>
+        </article>
+      </div>
+    </section>
+  </body>
+</html>

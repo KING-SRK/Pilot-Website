@@ -1,0 +1,164 @@
+.aviation-section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.aviation-container {
+  max-width: 1920px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 80px 100px;
+  gap: 70px;
+}
+
+/* ================= LEFT SIDE ================= */
+
+.aviation-left {
+  position: relative;
+  width: 50%;
+}
+
+.aviation-left img {
+  width: 100%;
+  border-radius: 32px;
+  display: block;
+}
+
+/* ================= RIGHT SIDE ================= */
+
+.aviation-right {
+  width: 50%;
+}
+
+.aviation-right h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.affiliation {
+  font-size: 15px;
+  margin-bottom: 18px;
+  color: #555;
+}
+
+.aviation-right p {
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 14px;
+  color: #333;
+}
+
+.read-btn {
+  padding: 11px 32px;
+  border-radius: 30px;
+  border: 1.5px solid #000;
+  background: transparent;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.read-btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* ================= 1440px ================= */
+
+@media (max-width: 1440px) {
+  .aviation-container {
+    padding: 60px;
+    gap: 50px;
+  }
+
+  .aviation-right h2 {
+    font-size: 28px;
+  }
+
+  .aviation-right p {
+    font-size: 14px;
+  }
+}
+
+/* ================= 1024px ================= */
+
+@media (max-width: 1024px) {
+  .aviation-container {
+    padding: 40px;
+    gap: 30px;
+  }
+
+  .aviation-right h2 {
+    font-size: 24px;
+  }
+
+  .aviation-right p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .read-btn {
+    padding: 10px 26px;
+    font-size: 14px;
+  }
+}
+
+/* ================= 768px ================= */
+
+@media (max-width: 768px) {
+  .aviation-container {
+    flex-direction: column;
+    padding: 30px;
+  }
+
+  .aviation-left,
+  .aviation-right {
+    width: 100%;
+  }
+
+  .aviation-left {
+    margin-bottom: 30px;
+  }
+
+  .aviation-right {
+    text-align: center;
+  }
+
+  .aviation-right h2 {
+    font-size: 22px;
+  }
+
+  .aviation-right p {
+    font-size: 14px;
+  }
+}
+
+/* ================= 575px ================= */
+
+@media (max-width: 575px) {
+  .aviation-container {
+    padding: 20px;
+    gap: 0;
+  }
+
+  .aviation-right h2 {
+    font-size: 18px;
+  }
+
+  .aviation-right p {
+    font-size: 13px;
+  }
+
+  .read-btn {
+    padding: 9px 22px;
+    font-size: 13px;
+  }
+
+  .aviation-left img {
+    border-radius: 20px;
+  }
+}
