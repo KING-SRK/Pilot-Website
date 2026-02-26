@@ -30,3 +30,28 @@ const testimonialSwiper = new Swiper(".gt-testimonial-swiper", {
     },
   },
 });
+
+const blogSwiper = new Swiper(".blog-swiper", {
+  slidesPerView: 1.2 /* দুই পাশের স্লাইড হালকা দেখা যাবে ছবির মতো */,
+  centeredSlides: true,
+  spaceBetween: 20,
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    // ট্যাবলেটে ২টো স্লাইড
+    768: {
+      slidesPerView: 2,
+      centeredSlides: false,
+      spaceBetween: 30,
+    },
+    // ল্যাপটপে ৩টে স্লাইড
+    1024: {
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 40,
+    },
+  },
+});

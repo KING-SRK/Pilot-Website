@@ -59,7 +59,7 @@
   text-align: center;
 }
 
-.read-more-btn {
+.intro-read-more-btn {
   padding: 12px 35px;
   border-radius: 30px;
   border: 1.5px solid #000;
@@ -71,7 +71,7 @@
   transition: 0.3s;
 }
 
-.read-more-btn:hover {
+.intro-read-more-btn:hover {
   background: #000;
   color: #fff;
 }
@@ -169,7 +169,7 @@
     font-size: 14px;
   }
 
-  .read-more-btn {
+  .intro-read-more-btn {
     font-size: 16px;
     padding: 10px 25px;
   }
@@ -202,7 +202,7 @@
     line-height: 1.6;
   }
 
-  .read-more-btn {
+  .intro-read-more-btn {
     font-size: 14px;
     padding: 8px 22px;
   }

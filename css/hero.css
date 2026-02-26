@@ -1,188 +1,138 @@
 .hero-section {
   width: 100%;
   height: 100vh;
-  background-image: url("/images/hero-bg.png");
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
+    url("/images/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
+  display: flex;
+  align-items: flex-end; /* কন্টেন্ট নিচেই থাকবে */
+  padding-bottom: 100px; /* ১৯২০ এর জন্য একটু বেশি গ্যাপ */
 }
 
 .hero-content {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  max-width: 1600px; /* ১৯২০ স্ক্রিনে লেখাগুলো খুব দূরে ছড়াবে না */
+  margin: 0 auto;
   color: #fff;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-}
-
-.hero-content-left {
-  width: 50%;
   padding: 0 40px;
+  font-family: sans-serif;
 }
 
-.hero-content-left h1 {
-  font-size: 50px;
-  font-weight: 700;
+/* কমন স্টাইল */
+.hero-content-left,
+.hero-content-right {
+  width: 45%;
+}
+
+.hero-content-left h1,
+.hero-content-right h1 {
+  font-size: 52px; /* ব্যালেন্সড সাইজ */
+  font-weight: 800;
+  line-height: 1.2;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
-.hero-content-left p {
-  font-size: 20px;
-  margin-bottom: 20px;
+.hero-content-left p,
+.hero-content-right p {
+  font-size: 19px; /* পড়ার জন্য আরামদায়ক সাইজ */
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 550px;
+  opacity: 0.95;
 }
 
-.hero-content-left button {
-  padding: 10px 20px;
-  font-size: 18px;
+.hero-content-left button,
+.hero-content-right button {
+  padding: 14px 32px;
+  font-size: 16px;
+  font-weight: 600;
   background: transparent;
   color: #fff;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 50px;
   cursor: pointer;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.hero-content-left button:hover {
+.hero-content-left button:hover,
+.hero-content-right button:hover {
   background: #fff;
-  color: #000;
+  color: #2c3e6b; /* তোমার থিম কালার অনুযায়ী */
+  transform: translateY(-5px);
 }
 
 .hero-content-right {
-  width: 50%;
-  padding: 0 40px;
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-.hero-content-right h1 {
-  font-size: 50px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
-.hero-content-right p {
-  font-size: 20px;
-  margin-bottom: 20px;
-}
-
-.hero-content-right button {
-  padding: 10px 20px;
-  font-size: 18px;
-  background: transparent;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
-
-.hero-content-right button:hover {
-  background: #fff;
-  color: #000;
-}
+/* --- রেসপনসিভ আপডেট --- */
 
 @media (max-width: 1440px) {
   .hero-content-left h1,
   .hero-content-right h1 {
-    font-size: 34px;
+    font-size: 42px;
   }
-
   .hero-content-left p,
   .hero-content-right p {
     font-size: 17px;
-  }
-
-  .hero-content {
-    padding: 0 40px;
   }
 }
 
 @media (max-width: 1024px) {
   .hero-section {
-    height: 90vh;
+    height: 85vh;
+    padding-bottom: 60px;
   }
-
-  .hero-content {
-    bottom: -20px;
-  }
-
   .hero-content-left h1,
   .hero-content-right h1 {
-    font-size: 28px;
-  }
-
-  .hero-content-left p,
-  .hero-content-right p {
-    font-size: 15px;
-  }
-
-  .hero-content-left,
-  .hero-content-right {
-    padding: 0 25px;
-  }
-
-  .hero-content-left button,
-  .hero-content-right button {
-    font-size: 16px;
+    font-size: 34px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-section {
     height: auto;
-    padding: 120px 0 60px;
+    padding: 150px 0 80px;
+    display: block;
   }
-
   .hero-content {
-    position: static;
-    transform: none;
     flex-direction: column;
-    gap: 50px;
+    gap: 60px;
     text-align: center;
+    padding: 0 20px;
   }
-
   .hero-content-left,
   .hero-content-right {
     width: 100%;
-    padding: 0 30px;
     text-align: center;
+    align-items: center;
   }
+  .hero-content-left p,
+  .hero-content-right p {
+    margin: 0 auto 25px;
+  }
+}
 
+@media (max-width: 480px) {
   .hero-content-left h1,
   .hero-content-right h1 {
     font-size: 26px;
   }
-
   .hero-content-left p,
   .hero-content-right p {
     font-size: 14px;
-  }
-}
-
-@media (max-width: 575px) {
-  .hero-section {
-    padding: 100px 0 50px;
-  }
-
-  .hero-content-left h1,
-  .hero-content-right h1 {
-    font-size: 22px;
-  }
-
-  .hero-content-left p,
-  .hero-content-right p {
-    font-size: 13px;
-  }
-
-  .hero-content-left button,
-  .hero-content-right button {
-    font-size: 14px;
-    padding: 8px 18px;
   }
 }

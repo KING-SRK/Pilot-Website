@@ -1,6 +1,6 @@
 .gt-testimonial-section {
   background-color: #2c3e6b;
-  padding: 80px 0;
+  padding: 100px 0; /* বড় স্ক্রিনে একটু বেশি স্পেস দিলাম */
   text-align: center;
   font-family: sans-serif;
   color: #fff;
@@ -8,35 +8,38 @@
 }
 
 .gt-testimonial-title {
-  font-size: 24px;
+  font-size: 32px; /* ১৯২০ এর জন্য টাইটেল বড় করলাম */
   font-weight: 700;
-  margin-bottom: 50px;
-  letter-spacing: 1px;
+  margin-bottom: 60px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
 }
 
+/* কন্টেইনার ১৯২০ পিক্সেলের জন্য আপডেট */
 .gt-testimonial-container {
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 60px; /* দুই পাশে সুন্দর গ্যাপের জন্য */
 }
 
 .gt-testimonial-box {
   border: 2px solid #fff;
-  border-radius: 30px;
-  padding: 40px;
-  min-height: 250px;
+  border-radius: 40px; /* বড় স্ক্রিনে বর্ডার রেডিয়াস একটু বাড়ালাম */
+  padding: 60px 40px; /* ভেতরে স্পেস বাড়ালাম */
+  min-height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 10px; /* স্লাইডগুলোর মধ্যে গ্যাপের জন্য */
+  margin: 15px;
+  background: transparent;
 }
 
 .gt-testimonial-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  margin-top: 30px;
+  gap: 20px;
+  margin-top: 40px;
 }
 
 .gt-footer-line {
@@ -46,52 +49,67 @@
 }
 
 .gt-testimonial-author {
-  font-size: 14px;
+  font-size: 16px; /* পড়ার সুবিধার জন্য বড় করলাম */
   font-weight: 700;
   white-space: nowrap;
+  letter-spacing: 1px;
 }
 
 /* Swiper Dots Customization */
 .gt-testimonial-dots {
   position: relative !important;
-  margin-top: 40px !important;
+  margin-top: 60px !important;
 }
 
 .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.5) !important;
   opacity: 1 !important;
-  width: 8px !important;
-  height: 8px !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 8px !important;
 }
 
 .swiper-pagination-bullet-active {
   background: #fff !important;
-  width: 10px !important;
-  height: 10px !important;
+  width: 12px !important;
+  height: 12px !important;
 }
 
-@media (max-width: 1440px) {
+/* --- রেসপনসিভ ব্রেকপয়েন্ট --- */
+
+@media (max-width: 1600px) {
   .gt-testimonial-container {
-    max-width: 1200px;
+    max-width: 1400px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .gt-testimonial-container {
+    max-width: 1100px;
+  }
+  .gt-testimonial-title {
+    font-size: 26px;
   }
 }
 
 @media (max-width: 1024px) {
   .gt-testimonial-container {
-    max-width: 1000px;
+    max-width: 950px;
+    padding: 0 20px;
   }
-  .gt-testimonial-title {
-    font-size: 22px;
+  .gt-testimonial-box {
+    padding: 40px 30px;
+    min-height: 250px;
   }
 }
 
 @media (max-width: 768px) {
   .gt-testimonial-box {
-    padding: 30px;
-    min-height: 200px;
+    padding: 30px 20px;
+    min-height: 220px;
   }
   .gt-testimonial-author {
-    font-size: 12px;
+    font-size: 13px;
   }
   .gt-footer-line {
     height: 1px;
@@ -100,17 +118,15 @@
 
 @media (max-width: 575px) {
   .gt-testimonial-title {
-    font-size: 18px;
-    margin-bottom: 30px;
+    font-size: 20px;
+    margin-bottom: 40px;
   }
   .gt-testimonial-box {
-    padding: 20px;
+    padding: 25px 15px;
     margin: 5px;
+    border-radius: 25px;
   }
   .gt-testimonial-author {
     font-size: 11px;
-  }
-  .gt-testimonial-footer {
-    gap: 10px;
   }
 }

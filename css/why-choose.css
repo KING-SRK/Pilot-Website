@@ -4,46 +4,49 @@
   font-family: sans-serif;
 }
 
+/* ১৯২০ পিক্সেল স্ক্রিনের জন্য কন্টেইনার আপডেট */
 .choose-container {
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 60px; /* দুই সাইডে সুন্দর গ্যাপের জন্য */
 }
 
 .choose-title {
   color: #fff;
   font-size: 32px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .choose-grid {
   display: flex;
-  justify-content: space-between;
-  gap: 15px;
+  justify-content: center;
+  gap: 25px; /* বড় স্ক্রিনে গ্যাপ একটু বাড়ালাম */
+  flex-wrap: wrap;
 }
 
 .choose-card {
-  flex: 1;
-  position: relative; /* এটার ভেতরেই সব এলিমেন্ট সাজানো হবে */
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  flex: 0 0 calc(20% - 25px);
+  position: relative;
+  max-width: 280px; /* বড় স্ক্রিনে কার্ডের সাইজ একটু বাড়ালাম */
 }
 
-.card-bg {
+.choose-card-bg {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.card-overlay {
+.choose-card-overlay {
   position: absolute;
-  top: 0;
+  top: 20%;
   left: 0;
   width: 100%;
   height: 100%;
-  padding: 40px 20px;
+  padding: 35px 15px; /* বড় স্ক্রিনে ভেতরের গ্যাপ বাড়ালাম */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,47 +54,69 @@
   box-sizing: border-box;
 }
 
-.card-icon {
-  width: 50px;
-  height: 50px;
-  margin-top: 10px;
-  margin-bottom: 20px;
+.choose-card-icon {
+  width: 60px; /* আইকন সাইজ একটু বড় করলাম */
+  height: 60px;
+  margin-bottom: 15px;
 }
 
-.card-icon img {
+.choose-card-icon img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
 
-.card-text {
+.choose-card-text {
   color: #333;
-  font-size: 14px;
+  font-size: 14px; /* পড়ার সুবিধার জন্য টেক্সট সাইজ বাড়ালাম */
   line-height: 1.4;
-  font-weight: 500;
-  max-width: 180px;
+  font-weight: 600;
+  max-width: 200px;
+}
+
+/* রেসপনসিভ ব্রেকপয়েন্ট */
+@media (max-width: 1440px) {
+  .choose-container {
+    max-width: 1300px;
+    padding: 0 40px;
+  }
+  .choose-card {
+    max-width: 220px;
+  }
+  .choose-card-text {
+    font-size: 12px;
+  }
 }
 
 @media (max-width: 1024px) {
-  .choose-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+  .choose-container {
+    max-width: 1000px;
+    padding: 0 20px;
+  }
+  .choose-card {
+    flex: 0 0 calc(33.33% - 20px);
+    max-width: 200px;
+  }
+  .choose-card-overlay {
+    padding: 25px 10px;
   }
 }
 
 @media (max-width: 768px) {
-  .choose-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .choose-card {
+    flex: 0 0 calc(50% - 20px);
+    max-width: 180px;
+  }
+  .choose-title {
+    font-size: 26px;
   }
 }
 
-@media (max-width: 575px) {
-  .choose-grid {
-    grid-template-columns: 1fr;
-  }
+@media (max-width: 480px) {
   .choose-card {
-    max-width: 280px;
-    margin: 0 auto;
+    flex: 0 0 160px;
+  }
+  .choose-card-text {
+    font-size: 10px;
   }
 }
