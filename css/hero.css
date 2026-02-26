@@ -98,11 +98,12 @@
   .hero-section {
     height: 85vh;
     padding-bottom: 70px;
-    background-size: cover; /* contain → cover better */
+    background-size: cover;
   }
 
   .hero-content {
     padding: 0 30px;
+    overflow: hidden;
   }
 
   .hero-content-left,
@@ -179,8 +180,15 @@
 ========================= */
 @media (max-width: 575px) {
   .hero-section {
-    background-position: 15% center;
+    height: 55vh;
     padding: 70px 0;
+    border-radius: 0 0 25px 25px;
+    background-size: cover;
+  }
+
+  .hero-content {
+    position: absolute;
+    top: 50%;
   }
 
   .hero-content-left h1,
@@ -192,6 +200,7 @@
   .hero-content-left p,
   .hero-content-right p {
     font-size: 14px;
+    margin: 0 auto 10px;
   }
 
   .hero-content-left button,

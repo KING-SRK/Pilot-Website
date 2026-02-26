@@ -83,6 +83,7 @@
 @media (max-width: 768px) {
   .hero-cards {
     margin-top: 0;
+    padding: 20px;
   }
 
   .cards-wrapper {
