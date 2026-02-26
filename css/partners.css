@@ -10,6 +10,13 @@
   margin-bottom: 40px;
 }
 
+.gt-partners-title {
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+}
+
 .gt-partners-grid-container {
   max-width: 100%;
   margin: 0 auto;
@@ -22,7 +29,7 @@
 }
 
 .gt-partner-box {
-  padding: 30px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,7 +43,7 @@
 
 .gt-logo-card {
   width: 100%;
-  max-width: 200px;
+  max-width: 240px;
   height: auto;
   display: flex;
   justify-content: center;

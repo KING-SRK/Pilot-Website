@@ -1,26 +1,24 @@
 .hero-section {
   width: 100%;
-  height: 100vh;
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)),
-    url("/images/hero-bg.png");
+  height: 90vh;
+  background-image: url("/images/hero-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
-  align-items: flex-end; /* কন্টেন্ট নিচেই থাকবে */
-  padding-bottom: 100px; /* ১৯২০ এর জন্য একটু বেশি গ্যাপ */
+  align-items: flex-end;
+  padding-bottom: 100px;
 }
 
 .hero-content {
   width: 100%;
-  max-width: 1600px; /* ১৯২০ স্ক্রিনে লেখাগুলো খুব দূরে ছড়াবে না */
+  max-width: 1700px;
   margin: 0 auto;
   color: #fff;
   display: flex;
-  align-items: flex-start;
   justify-content: space-between;
+  align-items: flex-start;
   padding: 0 40px;
   font-family: sans-serif;
 }
@@ -28,35 +26,36 @@
 /* কমন স্টাইল */
 .hero-content-left,
 .hero-content-right {
-  width: 45%;
+  width: 50%;
 }
 
 .hero-content-left h1,
 .hero-content-right h1 {
-  font-size: 52px; /* ব্যালেন্সড সাইজ */
-  font-weight: 800;
+  font-size: 35px;
+  font-weight: 600;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .hero-content-left p,
 .hero-content-right p {
-  font-size: 19px; /* পড়ার জন্য আরামদায়ক সাইজ */
+  font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   max-width: 550px;
   opacity: 0.95;
 }
 
 .hero-content-left button,
 .hero-content-right button {
-  padding: 14px 32px;
-  font-size: 16px;
+  padding: 8px 20px;
+  font-size: 12px;
   font-weight: 600;
   background: transparent;
-  color: #fff;
-  border: 2px solid #fff;
+  color: #ffffffb1;
+  border: 2px solid #ffffffb1;
   border-radius: 50px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -78,61 +77,126 @@
   align-items: flex-end;
 }
 
-/* --- রেসপনসিভ আপডেট --- */
-
+/* =========================
+   1440px (Large Desktop)
+========================= */
 @media (max-width: 1440px) {
+  .hero-content {
+    max-width: 1200px;
+  }
+
   .hero-content-left h1,
   .hero-content-right h1 {
-    font-size: 42px;
-  }
-  .hero-content-left p,
-  .hero-content-right p {
-    font-size: 17px;
+    font-size: 28px;
   }
 }
 
+/* =========================
+   1024px (Tablet Landscape)
+========================= */
 @media (max-width: 1024px) {
   .hero-section {
     height: 85vh;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
+    background-size: cover; /* contain → cover better */
   }
-  .hero-content-left h1,
-  .hero-content-right h1 {
-    font-size: 34px;
-  }
-}
 
-@media (max-width: 768px) {
-  .hero-section {
-    height: auto;
-    padding: 150px 0 80px;
-    display: block;
-  }
   .hero-content {
-    flex-direction: column;
-    gap: 60px;
-    text-align: center;
-    padding: 0 20px;
+    padding: 0 30px;
   }
+
   .hero-content-left,
   .hero-content-right {
-    width: 100%;
-    text-align: center;
-    align-items: center;
+    width: 48%;
   }
-  .hero-content-left p,
-  .hero-content-right p {
-    margin: 0 auto 25px;
-  }
-}
 
-@media (max-width: 480px) {
   .hero-content-left h1,
   .hero-content-right h1 {
     font-size: 26px;
   }
+}
+
+/* =========================
+   768px (Tablet Portrait)
+========================= */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 100vh;
+    padding: 120px 0 60px;
+  }
+
+  .hero-content {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+    padding: 0;
+  }
+
+  /* scrollbar hide */
+  .hero-content::-webkit-scrollbar {
+    display: none;
+  }
+
+  .hero-content-left,
+  .hero-content-right {
+    flex: 0 0 100%;
+    min-width: 100%;
+    scroll-snap-align: start;
+    text-align: center;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .hero-content-right {
+    align-items: center;
+  }
+
+  .hero-content-left h1,
+  .hero-content-right h1 {
+    font-size: 24px;
+  }
+
+  .hero-content-left p,
+  .hero-content-right p {
+    font-size: 15px;
+    max-width: 100%;
+    margin: 0 auto 25px;
+  }
+
+  .hero-content-left button,
+  .hero-content-right button {
+    font-size: 11px;
+    padding: 8px 18px;
+  }
+}
+
+/* =========================
+   575px (Mobile)
+========================= */
+@media (max-width: 575px) {
+  .hero-section {
+    background-position: 15% center;
+    padding: 70px 0;
+  }
+
+  .hero-content-left h1,
+  .hero-content-right h1 {
+    font-size: 20px;
+    line-height: 1.3;
+  }
+
   .hero-content-left p,
   .hero-content-right p {
     font-size: 14px;
+  }
+
+  .hero-content-left button,
+  .hero-content-right button {
+    font-size: 10px;
+    padding: 7px 16px;
   }
 }

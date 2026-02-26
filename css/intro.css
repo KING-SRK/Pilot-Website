@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap");
+
 .intro-section {
   width: 100%;
   background-color: #f9a61a;
-  margin-top: -80px;
+  margin-top: -55px;
   overflow: hidden;
 }
 
@@ -35,18 +37,21 @@
 }
 
 .intro-text h2 {
-  font-size: 40px;
+  font-size: 25px;
   margin-bottom: 25px;
-  font-weight: 700;
+  font-weight: 600;
   color: #000;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .intro-text p {
-  font-size: 19px;
+  font-size: 14px;
   line-height: 1.7;
   margin-bottom: 20px;
   text-align: justify;
   color: #111;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .intro-article::after {
@@ -60,11 +65,11 @@
 }
 
 .intro-read-more-btn {
-  padding: 12px 35px;
+  padding: 8px 20px;
   border-radius: 30px;
   border: 1.5px solid #000;
   background: transparent;
-  font-size: 18px;
+  font-size: 12px;
   font-weight: 600;
   cursor: pointer;
   margin-top: 10px;
@@ -97,14 +102,6 @@
     padding: 90px 50px 40px 50px;
   }
 
-  .intro-text h2 {
-    font-size: 34px;
-  }
-
-  .intro-text p {
-    font-size: 17px;
-  }
-
   .intro-image-wrapper {
     width: 48%;
     margin-right: 30px;
@@ -123,14 +120,6 @@
 
   .intro-text {
     padding: 80px 40px 30px 40px;
-  }
-
-  .intro-text h2 {
-    font-size: 28px;
-  }
-
-  .intro-text p {
-    font-size: 15px;
   }
 
   .intro-logos {

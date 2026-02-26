@@ -34,8 +34,9 @@
 
 .aviation-right h2 {
   font-size: 32px;
-  font-weight: 700;
+  font-weight: 600;
   margin-bottom: 12px;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .affiliation {

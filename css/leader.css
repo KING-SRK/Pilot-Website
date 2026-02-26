@@ -1,12 +1,12 @@
 .leader-heading {
   text-align: center;
-  padding-bottom: 50px;
   font-family: sans-serif;
 }
 
 .leader-heading h2 {
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 600;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .gt-leaders-section {
@@ -24,6 +24,7 @@
   font-size: 26px;
   font-weight: 700;
   margin: 0;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .gt-blue-bottom {
@@ -54,7 +55,7 @@
 
 .gt-leader-card {
   flex: 1;
-  max-width: 380px;
+  max-width: 300px;
   position: relative;
 }
 
@@ -65,7 +66,7 @@
 
 .gt-leader-info-overlay {
   position: absolute;
-  bottom: 12%;
+  bottom: 8%;
   left: 0;
   right: 0;
   color: #fff;
@@ -74,10 +75,11 @@
 }
 
 .gt-leader-info-overlay h3 {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 700;
   margin-bottom: 4px;
   text-transform: uppercase;
+  font-family: "Rajdhani", sans-serif;
 }
 
 .gt-leader-info-overlay p {

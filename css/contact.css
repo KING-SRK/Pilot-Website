@@ -1,28 +1,29 @@
 .contact-section {
   width: 100%;
-  background: #2c3e6b; /* blue background */
-  padding: 80px 0;
+  background: #2c3e6b;
+  padding: 100px 0;
   display: flex;
   justify-content: center;
 }
 
 .contact-wrapper {
-  max-width: 1920px;
   width: 80%;
+  max-width: 1920px;
+  margin: 0 auto;
   background: #f9a61a;
   border-radius: 30px;
-  padding: 80px 70px 80px 300px; /* left side space বাড়ানো */
+  padding: 50px 80px 50px 200px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  position: relative; /* IMPORTANT */
+  position: relative;
 }
 
 /* ================= LEFT IMAGES ================= */
 
 .contact-images {
   position: absolute;
-  left: -100px; /* image বাইরে বের হবে */
+  left: -120px;
   display: flex;
   align-items: center;
   gap: 40px;
@@ -49,21 +50,17 @@
   color: #111;
 }
 
-.contact-small-title {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 10px;
+.contact-small-title,
+.contact-main-title {
+  font-size: 28px;
+  font-family: "Rajdhani", sans-serif;
+  font-weight: 600;
+  margin: 0;
 }
 
 .contact-subtext {
   font-size: 16px;
   margin-bottom: 5px;
-}
-
-.contact-main-title {
-  font-size: 30px;
-  font-weight: 800;
-  margin: 25px 0 10px;
 }
 
 .contact-desc {
@@ -74,7 +71,7 @@
 .contact-form input,
 .contact-form textarea {
   width: 100%;
-  padding: 14px 18px;
+  padding: 12px 15px;
   margin-bottom: 15px;
   border-radius: 10px;
   border: 1.5px solid #000;
@@ -86,11 +83,6 @@
 .contact-form input::placeholder,
 .contact-form textarea::placeholder {
   color: #000;
-}
-
-.contact-form textarea {
-  resize: none;
-  height: 90px;
 }
 
 .contact-btn {
@@ -108,83 +100,48 @@
   color: #fff;
 }
 
+/* ================= 1440px ================= */
+
 @media (max-width: 1440px) {
   .contact-wrapper {
-    width: 90%;
-    padding: 70px 60px 70px 220px;
+    padding: 60px 60px 60px 160px;
   }
 
   .contact-images {
-    left: -80px;
+    left: -90px;
     gap: 30px;
-  }
-
-  .contact-small-title {
-    font-size: 20px;
-  }
-
-  .contact-main-title {
-    font-size: 26px;
-  }
-
-  .contact-subtext,
-  .contact-desc {
-    font-size: 14px;
   }
 }
 
+/* ================= 1024px ================= */
+
 @media (max-width: 1024px) {
   .contact-wrapper {
-    width: 80%;
-    padding: 60px 40px 60px 100px;
+    padding: 60px 40px 60px 120px;
   }
 
   .contact-images {
-    position: absolute;
-    left: -70px; /* একটু কম বের হবে */
+    left: -70px;
+    width: 50%;
     gap: 20px;
-    width: 55%;
-  }
-
-  .contact-img-box {
-    width: 48%;
   }
 
   .contact-content {
     width: 55%;
   }
 
-  .contact-small-title {
-    font-size: 18px;
-  }
-
   .contact-main-title {
-    font-size: 24px;
-  }
-
-  .contact-subtext,
-  .contact-desc {
-    font-size: 14px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    padding: 12px 15px;
-    font-size: 13px;
-  }
-
-  .contact-btn {
-    padding: 10px 24px;
-    font-size: 13px;
+    font-size: 26px;
   }
 }
 
+/* ================= 768px ================= */
+
 @media (max-width: 768px) {
   .contact-wrapper {
-    width: 100%;
     flex-direction: column;
-    padding: 50px 30px;
-    justify-content: center;
+    padding: 60px 30px;
+    text-align: center;
   }
 
   .contact-images {
@@ -201,18 +158,10 @@
 
   .contact-content {
     width: 100%;
-    text-align: center;
-  }
-
-  .contact-main-title {
-    font-size: 20px;
-  }
-
-  .contact-subtext,
-  .contact-desc {
-    font-size: 14px;
   }
 }
+
+/* ================= 575px ================= */
 
 @media (max-width: 575px) {
   .contact-wrapper {
@@ -228,22 +177,12 @@
     width: 100%;
   }
 
-  .contact-small-title {
-    font-size: 16px;
-  }
-
   .contact-main-title {
+    font-size: 22px;
+  }
+
+  .contact-small-title {
     font-size: 18px;
-  }
-
-  .contact-subtext,
-  .contact-desc {
-    font-size: 13px;
-  }
-
-  .contact-form input,
-  .contact-form textarea {
-    font-size: 13px;
   }
 
   .contact-btn {

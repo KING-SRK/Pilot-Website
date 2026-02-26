@@ -16,9 +16,10 @@
   margin-bottom: 5px;
 }
 .iaas-main-head {
-  font-size: 28px;
-  font-weight: 500;
+  font-size: 26px;
+  font-weight: 600;
   letter-spacing: 0.5px;
+  font-family: "Rajdhani", sans-serif;
 }
 .iaas-desc {
   font-size: 16px;
@@ -90,8 +91,9 @@
   padding: 12px 20px;
   width: 80%;
   text-align: center;
+  font-family: "Rajdhani", sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 20px;
   border-radius: 20px 20px 0 0;
   box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.05);
   text-transform: uppercase;
@@ -100,12 +102,27 @@
 .registration-text {
   text-align: center;
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 16px;
 }
 
 .registration-text span {
-  color: #f9a61a;
-  font-weight: 600;
   text-decoration: underline;
+}
+
+.registration-text i {
+  font-size: 20px;
+  color: #f9a61a;
+}
+
+@media (max-width: 1200px) {
+  .iaas-tag {
+    font-size: 14px;
+    width: 90%;
+  }
 }
 
 @media (max-width: 900px) {

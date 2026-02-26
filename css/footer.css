@@ -1,6 +1,6 @@
 .footer {
   background: #a7a9ac;
-  padding: 60px 8%;
+  padding: 60px 10%;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -17,7 +17,7 @@
 
 .footer-links {
   display: flex;
-  gap: 80px;
+  gap: 100px;
 }
 
 .footer-col {
@@ -79,13 +79,6 @@
    1440px (Large Screens)
 ======================= */
 @media (max-width: 1440px) {
-  .footer {
-    padding: 60px 6%;
-  }
-
-  .footer-links {
-    gap: 60px;
-  }
 
   .footer-logos img {
     width: 180px;
