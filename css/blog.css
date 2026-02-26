@@ -25,7 +25,6 @@
 .blog-container {
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 40px; /* সাইডে একটু বেশি গ্যাপ দেওয়া হলো */
 }
 
 .blog-card {
@@ -87,13 +86,13 @@
 /* রেসপনসিভ ব্রেকপয়েন্ট */
 @media (max-width: 1440px) {
   .blog-container {
-    max-width: 1400px;
+    max-width: 1440px;
   }
 }
 
 @media (max-width: 1024px) {
   .blog-container {
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 0 20px;
   }
   .blog-title {
