@@ -65,9 +65,10 @@
 }
 
 .intro-read-more-btn {
+  color: #333;
   padding: 8px 20px;
   border-radius: 30px;
-  border: 1.5px solid #000;
+  border: 1.5px solid #333;
   background: transparent;
   font-size: 12px;
   font-weight: 600;
@@ -86,13 +87,12 @@
   padding: 40px 0;
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 10px;
 }
 
 .intro-logos img {
-  height: 90px;
+  height: 95px;
   background: #fff;
-  padding: 15px 25px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
@@ -105,10 +105,6 @@
   .intro-image-wrapper {
     width: 48%;
     margin-right: 30px;
-  }
-
-  .intro-logos img {
-    height: 80px;
   }
 }
 

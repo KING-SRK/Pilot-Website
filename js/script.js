@@ -55,3 +55,11 @@ const blogSwiper = new Swiper(".blog-swiper", {
     },
   },
 });
+
+AOS.init({
+  duration: 1200,
+  easing: "ease-in-out",
+  once: false,
+  mirror: true,
+  offset: 80,
+});

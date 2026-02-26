@@ -1,7 +1,8 @@
 .contact-section {
   width: 100%;
   background: #2c3e6b;
-  padding: 100px 0;
+  padding: 25px 0;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -103,9 +104,6 @@
 /* ================= 1440px ================= */
 
 @media (max-width: 1440px) {
-  .contact-wrapper {
-    padding: 60px 60px 60px 160px;
-  }
 
   .contact-images {
     left: -90px;
