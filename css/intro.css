@@ -49,7 +49,7 @@
 /* RIGHT CONTENT */
 .fip-content {
   width: 60%;
-  padding: 80px 150px 0 50px;
+  padding: 80px 150px 0 0;
   background: linear-gradient(135deg, #f6a21a 0%, #f5a623 60%, #ef9e1d 100%);
   color: #000;
   display: flex;
@@ -100,7 +100,7 @@
 }
 
 .intro-read-btn button {
-  padding: 12px 40px;
+  padding: 8px 30px;
   border-radius: 30px;
   border: 1px solid #000;
   background: transparent;
@@ -134,7 +134,7 @@
 /* ================= 1440px ================= */
 @media (max-width: 1440px) {
   .fip-content {
-    padding: 60px 100px 0 40px;
+    padding: 60px 100px 0 0;
   }
 
   .fip-bottom {
