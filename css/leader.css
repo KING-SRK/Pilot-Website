@@ -17,7 +17,7 @@
 .gt-white-top {
   background-color: #fff;
   text-align: center;
-  padding: 80px 0 150px 0; /* ছবিগুলো বসার জন্য নিচে অনেকখানি স্পেস */
+  padding: 150px 0 150px 0; /* ছবিগুলো বসার জন্য নিচে অনেকখানি স্পেস */
 }
 
 .gt-leaders-title {
@@ -43,19 +43,19 @@
 .gt-leaders-grid {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 50px;
   position: absolute; /* মেইন ম্যাজিক এখানে */
   top: 0;
   left: 50%;
   transform: translate(-50%, -50%); /* একদম সেন্টারে অর্ধেক উপরে অর্ধেক নিচে */
   width: 100%;
-  max-width: 1400px;
+  max-width: 1500px;
   z-index: 10;
 }
 
 .gt-leader-card {
   flex: 1;
-  max-width: 300px;
+  max-width: 400px;
   position: relative;
 }
 
@@ -87,7 +87,7 @@
 }
 
 .gt-view-all {
-  padding-top: 250px; /* কার্ডের নিচ থেকে বাটন সরাতে padding */
+  padding-top: 300px; /* কার্ডের নিচ থেকে বাটন সরাতে padding */
   text-align: center;
 }
 
@@ -105,6 +105,10 @@
   .gt-leaders-container {
     max-width: 1200px;
   }
+
+  .gt-leader-card {
+    max-width: 350px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -116,6 +120,9 @@
   }
   .gt-white-top {
     padding-bottom: 120px;
+  }
+  .gt-leader-card {
+    max-width: 300px;
   }
   .gt-leader-info-overlay h3 {
     font-size: 13px;
@@ -134,7 +141,7 @@
     width: 100%;
   }
   .gt-white-top {
-    padding-bottom: 50px;
+    padding: 80px 0 80px 0;
   }
   .gt-leader-card {
     width: 90%;

@@ -6,7 +6,7 @@
 
 /* ১৯২০ পিক্সেল স্ক্রিনের জন্য কন্টেইনার আপডেট */
 .choose-container {
-  max-width: 1920px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 0 60px; /* দুই সাইডে সুন্দর গ্যাপের জন্য */
 }
@@ -23,9 +23,10 @@
 
 .choose-grid {
   display: flex;
-  justify-content: center;
-  gap: 25px; /* বড় স্ক্রিনে গ্যাপ একটু বাড়ালাম */
+  justify-content: space-between;
+  gap: 25px;
   flex-wrap: wrap;
+  padding: 0 20px;
 }
 
 .choose-card {
@@ -77,8 +78,7 @@
 /* রেসপনসিভ ব্রেকপয়েন্ট */
 @media (max-width: 1440px) {
   .choose-container {
-    max-width: 1300px;
-    padding: 0 40px;
+    max-width: 1440px;
   }
   .choose-card {
     max-width: 220px;
@@ -90,7 +90,7 @@
 
 @media (max-width: 1024px) {
   .choose-container {
-    max-width: 1000px;
+    max-width: 1024px;
     padding: 0 20px;
   }
   .choose-card {

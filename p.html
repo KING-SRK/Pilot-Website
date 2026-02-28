@@ -4,126 +4,112 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/p.css" />
   </head>
-  <style>
-    .intro-section {
-      background-color: #f7a01b;
-      padding: 40px;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: 0 auto;
-    }
-
-    .floating-image {
-      /* এটাই আসল কাজটা করবে */
-      float: left;
-
-      width: 45%; /* ছবিটা স্ক্রিনের ৪৫% জায়গা নেবে */
-      margin-right: 30px; /* ছবি আর লেখার মাঝে গ্যাপ */
-      margin-bottom: 20px; /* ছবির নিচে যদি লেখা থাকে তার গ্যাপ */
-      border-radius: 15px;
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-    }
-
-    h2 {
-      font-size: 2rem;
-      margin-top: 0;
-      text-transform: uppercase;
-    }
-
-    p {
-      font-size: 1.05rem;
-      line-height: 1.6;
-      margin-bottom: 15px;
-      text-align: justify; /* পুরো ছবির মতো লুক পাওয়ার জন্য */
-    }
-
-    /* ফ্লোট ক্লিন করার জন্য (যাতে নিচের সেকশন ভেঙে না যায়) */
-    article::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
-    /* মোবাইল রেসপন্সিভ */
-    @media (max-width: 768px) {
-      .floating-image {
-        float: none; /* মোবাইলে ফ্লোট বন্ধ করে দেব */
-        width: 100%;
-        margin-right: 0;
-      }
-    }
-  </style>
   <body>
-    <section class="intro-section">
-      <div class="container">
-        <article class="content-wrapper">
-          <aside class="image-box">
-            <img
-              src="images/pilot.png"
-              alt="A smiling Indian Pilot in cockpit"
-            />
-          </aside>
+    <section class="fip-section">
+      <div class="fip-top">
+        <!-- LEFT IMAGE -->
+        <div class="fip-image">
+          <img src="images/pilot.png" alt="Pilot" />
+        </div>
 
-          <section class="intro-section">
-            <div class="container">
-              <article>
-                <img
-                  src="images/pilot.png"
-                  alt="Pilot"
-                  class="floating-image"
-                />
+        <!-- RIGHT CONTENT -->
+        <div class="fip-content">
+          <h2>INTRODUCTION TO FIP</h2>
 
-                <div class="content">
-                  <h2>INTRODUCTION TO FIP</h2>
-                  <p>
-                    <strong>The Federation of Indian Pilots (FIP)</strong> is
-                    India's largest and most representative professional welfare
-                    body for pilots...
-                  </p>
-                  <p>
-                    From its inception, FIP has stood firmly for one
-                    non-negotiable principle SAFETY...
-                  </p>
-                  <p>
-                    Recognising that safety begins with knowledge, competence,
-                    and disciplined training...
-                  </p>
-                  <p>
-                    Since 2018, FIP has led sustained legal and regulatory
-                    interventions...
-                  </p>
-                  <p>
-                    Recognising that safety begins with knowledge, competence,
-                    and disciplined training...
-                  </p>
-                  <p>
-                    Since 2018, FIP has led sustained legal and regulatory
-                    interventions...
-                  </p>
-                  <p>
-                    Recognising that safety begins with knowledge, competence,
-                    and disciplined training...
-                  </p>
-                  <p>
-                    Since 2018, FIP has led sustained legal and regulatory
-                    interventions...
-                  </p>
-                  <p>
-                    Recognising that safety begins with knowledge, competence,
-                    and disciplined training...
-                  </p>
-                  <p>
-                    Since 2018, FIP has led sustained legal and regulatory
-                    interventions...
-                  </p>
-                </div>
-              </article>
-            </div>
-          </section>
-        </article>
+          <p>
+            The Federation of Indian Pilots (FIP) is India's largest and most
+            representative professional welfare body for pilots, established in
+            1996. It represents over 5,500 Indian pilots from Scheduled
+            Airlines, Non-Scheduled and General Aviation Operators, Helicopter
+            Operations, and Ex-Defence Aviators. FIP is a non-profit,
+            welfare-oriented professional body and not a trade union,
+            functioning solely in the interest of aviation safety, professional
+            standards, and the collective well-being of Indian pilots.
+          </p>
+
+          <p>
+            From its inception, FIP has stood firmly for one non-negotiable
+            principle SAFETY alongside the professional dignity, welfare, and
+            rights of pilots. For nearly three decades, FIP has engaged
+            constructively with the DGCA, Ministry of Civil Aviation, and other
+            government authorities to ensure that aviation policies are shaped
+            by scientific evidence, global best practices, and real-world
+            operational realities, rather than short-term commercial
+            considerations.
+          </p>
+
+          <p>
+            Recognising that safety begins with knowledge, competence, and
+            disciplined training, FIP established its education wing, the
+            Institute of Aviation & Aviation Safety (IAAS). IAAS delivers
+            structured, regulator-aligned training in pilot ground subjects,
+            aviation safety, and allied disciplines, with strong alignment to
+            DGCA and ICAO standards. Through IAAS, FIP actively contributes to
+            building a safety-driven, professionally competent, and future-ready
+            aviation ecosystem for India.
+          </p>
+
+          <p>
+            Since 2018, FIP has led sustained legal and regulatory interventions
+            on Flight Duty Time Limitations (FDTL) and fatigue-related safety
+            issues, playing a pivotal role in protecting pilots from unsafe and
+            fatigue-inducing practices. Following the 12 June 2025 Boeing-787
+            accident, FIP emerged as a credible national voice, contributing
+            decisively to the implementation of the Revised FDTL CAR and firmly
+            opposing any dilution of established safety norms.
+          </p>
+        </div>
+      </div>
+
+      <!-- FULL ORANGE LOWER CONTENT -->
+      <div class="fip-bottom">
+        <p>
+          Beyond advocacy and education, FIP has demonstrated consistent
+          commitment to pilot welfare through Loss of Licence (LOL) and Group
+          Medical Cover (GMC) insurance schemes for over 16 years. These
+          policies are highly competitive, with no LOL claim ever rejected to
+          date and total claims exceeding ₹311 crore successfully settled. GMC
+          claims have also been settled efficiently, providing pilots and their
+          families with essential financial security.
+        </p>
+
+        <p>
+          FIP, through IAAS, is expanding its professional development
+          initiatives with programmes such as Pilot Ground Training (CPL/ATPL),
+          Cabin Crew Training, Customer Service Training, Diploma courses in
+          Hospitality, and Auditor programmes. FIP members are eligible for
+          discounted training rates for their family members, with a focus on
+          quality training and realistic placement opportunities across the
+          aviation and hospitality sectors.
+        </p>
+
+        <p>
+          The primary objective of FIP remains unwavering: to pursue aviation
+          safety issues with all relevant government agencies, actively engage
+          in accident-related safety deliberations, and uphold the highest
+          professional standards. For the Federation of Indian Pilots, safety is
+          non-negotiable, fatigue is real, and compromise is unacceptable in
+          aviation.
+        </p>
+
+        <div class="intro-read-btn">
+          <button>Read More</button>
+        </div>
+
+        <div class="fip-logos">
+          <div class="logo-box">
+            <img src="images/logo1.png" />
+          </div>
+          <div class="logo-box">
+            <img src="images/logo2.png" />
+          </div>
+          <div class="logo-box">
+            <img src="images/logo3.png" />
+          </div>
+        </div>
       </div>
     </section>
   </body>

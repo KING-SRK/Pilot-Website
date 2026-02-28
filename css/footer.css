@@ -25,7 +25,7 @@
 
 .footer-content {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 0.5fr;
   gap: 60px;
 }
 
@@ -60,11 +60,12 @@
   margin-top: 15px;
   display: flex;
   gap: 12px;
+  font-size: 12px;
 }
 
 .social-icons i {
-  width: 36px;
-  height: 36px;
+  width: 25px;
+  height: 25px;
   border: 1px solid #000;
   border-radius: 50%;
   display: flex;

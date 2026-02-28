@@ -16,7 +16,7 @@
 
 /* কন্টেইনার ১৯২০ পিক্সেলের জন্য আপডেট */
 .gt-testimonial-container {
-  max-width: 1920px;
+  max-width: 1700px;
   margin: 0 auto;
   padding: 0 60px; /* দুই পাশে সুন্দর গ্যাপের জন্য */
 }
@@ -80,7 +80,7 @@
 
 @media (max-width: 1600px) {
   .gt-testimonial-container {
-    max-width: 1400px;
+    max-width: 1440px;
   }
 }
 

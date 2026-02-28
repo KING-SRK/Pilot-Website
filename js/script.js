@@ -63,3 +63,26 @@ AOS.init({
   mirror: true,
   offset: 80,
 });
+
+var swiper = new Swiper(".heroSwiper", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  loop: false, // custom dot এর জন্য false রাখাই ভালো
+  breakpoints: {
+    0: { slidesPerView: 1 },
+    768: { slidesPerView: 2 },
+  },
+});
+
+const dots = document.querySelectorAll(".dot");
+
+dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    swiper.slideTo(index);
+  });
+});
+
+swiper.on("slideChange", function () {
+  dots.forEach((dot) => dot.classList.remove("active"));
+  dots[swiper.activeIndex].classList.add("active");
+});

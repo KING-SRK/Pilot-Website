@@ -2,9 +2,37 @@
 
 .hero-cards {
   position: relative;
-  margin-top: -50px;
-  z-index: 10;
+  margin-top: -60px;
   padding: 0 20px;
+}
+
+/* 2 card layout */
+.heroSwiper {
+  position: relative;
+  max-width: 950px;
+  margin: auto;
+}
+
+.custom-dots {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.dot {
+  width: 11px;
+  height: 11px;
+  background: #fff;
+  opacity: 0.4;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.dot.active {
+  opacity: 1;
 }
 
 /* ================= WRAPPER ================= */
@@ -59,65 +87,89 @@
 }
 
 /* ================= 1200px ================= */
-
 @media (max-width: 1200px) {
-  .hero-cards {
-    margin-top: -50px;
+  .heroSwiper {
+    max-width: 900px;
   }
 
-  .card {
-    max-width: 400px;
-  }
-}
-
-/* ================= 992px ================= */
-
-@media (max-width: 992px) {
-  .cards-wrapper {
+  .custom-dots {
+    right: 10px;
     gap: 20px;
   }
 }
 
-/* ================= 768px ================= */
+/* ================= 992px ================= */
+@media (max-width: 992px) {
+  .heroSwiper {
+    max-width: 700px;
+  }
 
+  .custom-dots {
+    top: -30px;
+    right: 10px;
+    gap: 15px;
+  }
+}
+
+/* ================= 768px ================= */
 @media (max-width: 768px) {
   .hero-cards {
     margin-top: 0;
     padding: 20px;
   }
 
-  .cards-wrapper {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
+  .heroSwiper {
+    max-width: 100%;
+  }
+
+  .custom-dots {
+    position: relative; /* absolute থেকে relative */
+    top: auto;
+    right: auto;
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .dot {
+    width: 10px;
+    height: 10px;
   }
 
   .card {
-    width: 100%;
-    max-width: 500px;
+    max-width: 100%;
   }
 }
 
 /* ================= 575px ================= */
-
 @media (max-width: 575px) {
-  .hero-cards {
-    margin-top: 0;
+  .custom-dots {
+    gap: 12px;
+    margin-bottom: 10px;
   }
 
-  .cards-wrapper {
-    gap: 5px;
-  }
-
-  .card-text {
-    width: 90%;
+  .dot {
+    width: 9px;
+    height: 9px;
   }
 
   .card-text h4 {
-    margin-bottom: 5px;
+    font-size: 14px;
   }
 
   .card-text p {
+    font-size: 14px;
     letter-spacing: 0.5px;
+  }
+}
+
+/* ================= 400px ================= */
+@media (max-width: 400px) {
+  .dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .custom-dots {
+    gap: 10px;
   }
 }
